@@ -1,0 +1,2 @@
+SELECT MIN(DATETIME) AS earliest_datetime
+FROM ANIMAL_INS;
