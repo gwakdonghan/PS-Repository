@@ -1,6 +1,7 @@
 def solution(my_string):
-    vowels = {'a', 'e', 'i', 'o', 'u'}  # 모음을 집합으로 정의
-    # 문자열에서 모음을 제거
+    # 제거할 모음 리스트
+    vowels = "aeiou"
+    # 문자열을 순회하며 모음이 아닌 문자만 골라서 join
     result = ''.join(char for char in my_string if char not in vowels)
     return result
 
