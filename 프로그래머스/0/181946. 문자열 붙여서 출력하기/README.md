@@ -24,5 +24,5 @@ str1, str2 = input().strip().split(' ')
 print(str1 + str2)
 ~~~
 코드 풀이 :  
-~str1, str2 = input().strip().split(' ')~  
+₩str1, str2 = input().strip().split(' ')₩    
 
