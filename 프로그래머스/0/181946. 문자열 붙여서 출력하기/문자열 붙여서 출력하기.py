@@ -1,8 +1,5 @@
-# 두 문자열 입력받기
-str1, str2 = input().split()
+# 두 개의 단어를 입력받아서
+str1, str2 = input().strip().split(' ')
 
-# 문자열 이어 붙이기
-result = str1 + str2
-
-# 결과 출력하기
-print(result)
+# 그냥 이어 붙여서 출력하면 끝!
+print(str1 + str2)
