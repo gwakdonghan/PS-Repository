@@ -76,12 +76,12 @@ def solution(a, b, flag):
         return a - b
 ```
 정답코드 설명:  
-`def solution(a, b, flag):`
-- 이건 a, b, flag라는 값을 받아서 계산하는 함수예요.
-`    if flag:`
-- 만약 flag가 True면...
-`        return a + b`
-두 숫자를 더해서 돌려줘요!
+`def solution(a, b, flag):`  
+- 이건 a, b, flag라는 값을 받아서 계산하는 함수예요.  
+`    if flag:`  
+- 만약 flag가 True면...  
+`        return a + b`  
+두 숫자를 더해서 돌려줘요!  
 ```
     else:
         return a - b
