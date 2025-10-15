@@ -1,5 +1,6 @@
 <img width="1718" height="1250" alt="image" src="https://github.com/user-attachments/assets/8b8e2ba2-cab2-4b2d-ba6c-b5f2700b21ce" />
 “flag 값에 따라 다른 계산을 하기”  
+flag 뜻:  
 프로그래밍에서 자주 등장하는 **flag**는 단순히 "깃발"이 아니라, 특정 상태나 조건을 나타내는 표시 변수를 의미합니다.  
 
 
