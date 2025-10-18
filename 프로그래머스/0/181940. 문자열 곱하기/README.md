@@ -1,74 +1,26 @@
-# [level 0] 문자열 곱하기 - 181940 
+<img width="1536" height="1208" alt="image" src="https://github.com/user-attachments/assets/780fd4a9-6b14-45ae-b4a0-db116b221768" />  
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181940) 
+어떤 단어(문자열)를 몇 번 반복해서 길게 만든 다음,  
+그걸 그대로 돌려주는 함수를 만드는 문제예요!  
 
-### 성능 요약
+예시:  
+my_string = "string"  
+k = 3  
+- 단어 "string"을  
+- 3번 반복하면 → "stringstringstring"  
+👉 이걸 결과로 돌려주면 끝이에요!
 
-메모리: 9.27 MB, 시간: 0.00 ms
+🧠 그럼 어떻게 풀까?  
+파이썬에서는 문자열도 곱셈이 가능해요!  
 
-### 구분
+"abc" * 3  ➜ "abcabcabc"  
 
-코딩테스트 연습 > 코딩 기초 트레이닝
-
-### 채점결과
-
-정확성: 100.0<br/>합계: 100.0 / 100.0
-
-### 제출 일자
-
-2025년 10월 18일 18:43:49
-
-### 문제 설명
-
-<p>문자열 <code>my_string</code>과 정수 <code>k</code>가 주어질 때, <code>my_string</code>을 <code>k</code>번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
-
-<hr>
-
-<h5>제한사항</h5>
-
-<ul>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 100</li>
-<li><code>my_string</code>은 영소문자로만 이루어져 있습니다.</li>
-<li>1 ≤ <code>k</code> ≤ 100</li>
-</ul>
-
-<hr>
-
-<h5>입출력 예</h5>
-<table class="table">
-        <thead><tr>
-<th>my_string</th>
-<th>k</th>
-<th>result</th>
-</tr>
-</thead>
-        <tbody><tr>
-<td>"string"</td>
-<td>3</td>
-<td>"stringstringstring"</td>
-</tr>
-<tr>
-<td>"love"</td>
-<td>10</td>
-<td>"lovelovelovelovelovelovelovelovelovelove"</td>
-</tr>
-</tbody>
-      </table>
-<hr>
-
-<h5>입출력 예 설명</h5>
-
-<p>입출력 예 #1</p>
-
-<ul>
-<li>예제 1번의 <code>my_string</code>은 "string"이고 이를 3번 반복한 문자열은 "stringstringstring"이므로 이를 return 합니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-
-<ul>
-<li>예제 2번의 <code>my_string</code>은 "love"이고 이를 10번 반복한 문자열은 "lovelovelovelovelovelovelovelovelovelove"이므로 이를 return 합니다.</li>
-</ul>
+정답 코드:  
+```
+def solution(my_string, k):
+    return my_string * k
+```
 
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+
