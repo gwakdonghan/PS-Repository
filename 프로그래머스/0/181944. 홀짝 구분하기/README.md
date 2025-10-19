@@ -1,52 +1,30 @@
-# [level 0] 홀짝 구분하기 - 181944 
+<img width="1366" height="1330" alt="image" src="https://github.com/user-attachments/assets/bb8b6164-3d67-4137-a673-0e183697abb2" />  
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181944) 
+“홀짝 구분하기” 문제  
 
-### 성능 요약
+자연수 n이 입력으로 주어졌을 때,  
+n이 짝수면 → "n is even"  
+n이 홀수면 → "n is odd"  
+라는 문장을 출력해주는 프로그램을 만들어요.  
 
-메모리: 7.46 MB, 시간: 13.92 ms
+조건  
+- 입력값 n은 1부터 1000까지의 자연수입니다.
+- 짝수는 2, 4, 6, 8처럼 2로 나누어 떨어지는 수예요.
+- 홀수는 1, 3, 5, 7처럼 2로 나누어 떨어지지 않는 수예요.
 
-### 구분
+정답 코드:  
+```
+a = int(input())  # 사용자로부터 숫자를 입력받아서 a에 저장
 
-코딩테스트 연습 > 코딩 기초 트레이닝
+if a % 2 == 0:  # 2로 나누어 떨어지면 짝수
+    print(f"{a} is even")
+else:  # 아니면 홀수
+    print(f"{a} is odd")
+```
+코드 설명:  
+`a = int(input())` 숫자를 입력받고 정수로 바꿔서 저장해요.    
+`if a % 2 == 0:` 2로 나눴을 때 나머지가 0이면 짝수예요.  
+`print(f"{a} is even")` 짝수면 이렇게 출력.  
+`else:` 짝수가 아니면 무조건 홀수!  
+`print(f"{a} is odd")` 그래서 홀수면 이렇게 출력해요.  
 
-### 채점결과
-
-정확성: 100.0<br/>합계: 100.0 / 100.0
-
-### 제출 일자
-
-2025년 10월 19일 19:50:07
-
-### 문제 설명
-
-<p>자연수 <code>n</code>이 입력으로 주어졌을 때 만약 <code>n</code>이 짝수이면 "<code>n</code> is even"을, 홀수이면 "<code>n</code> is odd"를 출력하는 코드를 작성해 보세요.</p>
-
-<hr>
-
-<h5>제한사항</h5>
-
-<ul>
-<li>1 ≤ <code>n</code> ≤ 1,000</li>
-</ul>
-
-<hr>
-
-<h5>입출력 예</h5>
-
-<p>입력 #1</p>
-<div class="highlight"><pre class="codehilite"><code>100
-</code></pre></div>
-<p>출력 #1</p>
-<div class="highlight"><pre class="codehilite"><code>100 is even
-</code></pre></div>
-<p>입력 #2</p>
-<div class="highlight"><pre class="codehilite"><code>1
-</code></pre></div>
-<p>출력 #2</p>
-<div class="highlight"><pre class="codehilite"><code>1 is odd
-</code></pre></div>
-<p>※ 2023년 05월 15일 지문이 수정되었습니다.</p>
-
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
