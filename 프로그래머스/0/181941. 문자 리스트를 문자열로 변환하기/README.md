@@ -1,53 +1,36 @@
-# [level 0] 문자 리스트를 문자열로 변환하기 - 181941 
+<img width="1468" height="778" alt="image" src="https://github.com/user-attachments/assets/bd15d3f8-d9fc-4a89-a6cf-be5da7e10b79" />  
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181941) 
+문자 리스트를 하나의 문자열로 바꾸는 문제  
 
-### 성능 요약
+리스트 arr 안에 글자(문자)들이 있어요.  
+이 글자들을 차례대로 붙여서 하나의 문자열로 만들고 그 문자열을 return(반환) 하면 돼요!  
 
-메모리: 9.24 MB, 시간: 0.01 ms
+예시:  
+arr = ["a", "b", "c"]  
+- 이걸 "abc"로 이어붙이면 돼요!
 
-### 구분
+출력:  
+"abc"  
 
-코딩테스트 연습 > 코딩 기초 트레이닝
+어떻게 붙일까?  
+파이썬에서는 문자열 리스트를 .join() 이라는 걸로 쉽게 붙일 수 있어요!  
+"".join(["a", "b", "c"])  ➜  "abc"  
 
-### 채점결과
+정답 코드:  
+```
+def solution(arr):
+    return ''.join(arr)
+```
 
-정확성: 100.0<br/>합계: 100.0 / 100.0
+코드 설명:  
+`''.join(arr)` arr 리스트 안의 문자들을 전부 이어붙임  
 
-### 제출 일자
+예시 테스트:  
+solution(["a", "b", "c"])  ➜  "abc"  
+solution(["h", "e", "l", "l", "o"])  ➜  "hello"  
 
-2025년 10월 22일 22:19:30
 
-### 문제 설명
 
-<p>문자들이 담겨있는 배열 <code>arr</code>가 주어집니다. <code>arr</code>의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.</p>
 
-<hr>
 
-<h5>제한사항</h5>
 
-<ul>
-<li>1 ≤ <code>arr</code>의 길이 ≤ 200
-
-<ul>
-<li><code>arr</code>의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.</li>
-</ul></li>
-</ul>
-
-<hr>
-
-<h5>입출력 예</h5>
-<table class="table">
-        <thead><tr>
-<th>arr</th>
-<th>result</th>
-</tr>
-</thead>
-        <tbody><tr>
-<td>["a","b","c"]</td>
-<td>"abc"</td>
-</tr>
-</tbody>
-      </table>
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
