@@ -1,74 +1,33 @@
-# [level 0] 문자열의 뒤의 n글자 - 181910 
+<img width="1598" height="1150" alt="image" src="https://github.com/user-attachments/assets/70065ea9-cd19-4ae5-ae2f-ec484715709c" />  
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181910?language=python3) 
+문제 설명:  
 
-### 성능 요약
+문자열 my_string과 숫자 n이 주어져요.
+이 문자열의 뒤에서부터 n글자만 뽑아서
+그것만 돌려주는 함수(solution)를 만들면 된다.  
 
-메모리: 9.15 MB, 시간: 0.00 ms
+예시:  
+```
+my_string = "He110W0r1d"
+n = 5
+```
+결과: "W0r1d"  
 
-### 구분
+정답 코드:  
+```
+def solution(my_string, n):
+    return my_string[-n:]
+```
 
-코딩테스트 연습 > 코딩 기초 트레이닝
+코드 설명:  
+my_string[-n:]  
+👉 문자열에서 뒤에서부터 n글자만 잘라오는 파이썬 문법이다.  
 
-### 채점결과
+예:  
+```
+"hello"[-2:]  ➜  "lo"
+"abcdef"[-3:] ➜  "def"
+```
+  
+파이썬 슬라이싱([])은 자주 쓰이니까 익숙해지면 좋다.
 
-정확성: 100.0<br/>합계: 100.0 / 100.0
-
-### 제출 일자
-
-2025년 11월 13일 23:12:16
-
-### 문제 설명
-
-<p>문자열 <code>my_string</code>과 정수 <code>n</code>이 매개변수로 주어질 때, <code>my_string</code>의 뒤의 <code>n</code>글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
-
-<hr>
-
-<h5>제한사항</h5>
-
-<ul>
-<li><code>my_string</code>은 숫자와 알파벳으로 이루어져 있습니다.</li>
-<li>1 ≤ <code>my_string</code>의 길이 ≤ 1,000</li>
-<li>1 ≤ <code>n</code> ≤ <code>my_string</code>의 길이</li>
-</ul>
-
-<hr>
-
-<h5>입출력 예</h5>
-<table class="table">
-        <thead><tr>
-<th>my_string</th>
-<th>n</th>
-<th>result</th>
-</tr>
-</thead>
-        <tbody><tr>
-<td>"ProgrammerS123"</td>
-<td>11</td>
-<td>"grammerS123"</td>
-</tr>
-<tr>
-<td>"He110W0r1d"</td>
-<td>5</td>
-<td>"W0r1d"</td>
-</tr>
-</tbody>
-      </table>
-<hr>
-
-<h5>입출력 예</h5>
-
-<p>입출력 예 #1</p>
-
-<ul>
-<li>예제 1번의 <code>my_string</code>에서 뒤의 11글자는 "grammerS123"이므로 이 문자열을 return 합니다.</li>
-</ul>
-
-<p>입출력 예 #2</p>
-
-<ul>
-<li>예제 2번의 <code>my_string</code>에서 뒤의 5글자는 "W0r1d"이므로 이 문자열을 return 합니다.</li>
-</ul>
-
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
